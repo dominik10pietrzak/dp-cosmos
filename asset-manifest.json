@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dp-cosmos/static/css/main.576f55e1.chunk.css",
-    "main.js": "/dp-cosmos/static/js/main.8bf480cf.chunk.js",
-    "main.js.map": "/dp-cosmos/static/js/main.8bf480cf.chunk.js.map",
+    "main.css": "/dp-cosmos/static/css/main.66986751.chunk.css",
+    "main.js": "/dp-cosmos/static/js/main.1f2d52ea.chunk.js",
+    "main.js.map": "/dp-cosmos/static/js/main.1f2d52ea.chunk.js.map",
     "runtime-main.js": "/dp-cosmos/static/js/runtime-main.59d450bd.js",
     "runtime-main.js.map": "/dp-cosmos/static/js/runtime-main.59d450bd.js.map",
     "static/js/2.fb46417e.chunk.js": "/dp-cosmos/static/js/2.fb46417e.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.eac802f6.chunk.js": "/dp-cosmos/static/js/3.eac802f6.chunk.js",
     "static/js/3.eac802f6.chunk.js.map": "/dp-cosmos/static/js/3.eac802f6.chunk.js.map",
     "index.html": "/dp-cosmos/index.html",
-    "static/css/main.576f55e1.chunk.css.map": "/dp-cosmos/static/css/main.576f55e1.chunk.css.map",
+    "static/css/main.66986751.chunk.css.map": "/dp-cosmos/static/css/main.66986751.chunk.css.map",
     "static/js/2.fb46417e.chunk.js.LICENSE.txt": "/dp-cosmos/static/js/2.fb46417e.chunk.js.LICENSE.txt",
     "static/media/arrow-down.svg": "/dp-cosmos/static/media/arrow-down.0af08359.svg",
     "static/media/arrow-up.svg": "/dp-cosmos/static/media/arrow-up.218a3aa5.svg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.59d450bd.js",
     "static/js/2.fb46417e.chunk.js",
-    "static/css/main.576f55e1.chunk.css",
-    "static/js/main.8bf480cf.chunk.js"
+    "static/css/main.66986751.chunk.css",
+    "static/js/main.1f2d52ea.chunk.js"
   ]
 }
