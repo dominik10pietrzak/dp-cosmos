@@ -1,0 +1,23 @@
+.App {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 36px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-color: #221b3a;
+  overflow: hidden;
+
+  .usertive-logo {
+    width: 116px;
+    margin-left: 165px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,84 @@
+.background-items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  .circle {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, #2b2347 0%, #221b3a 100%);
+    border-radius: 50%;
+
+    .filler {
+      width: 75%;
+      height: 75%;
+      border-radius: inherit;
+      background-color: #221b3a;
+    }
+  }
+
+  .circle-1 {
+    left: -12.29%;
+    right: 88.23%;
+    top: 41.93%;
+    bottom: 12.97%;
+  }
+
+  .circle-2 {
+    left: 33.61%;
+    right: 42.33%;
+    top: -26.82%;
+    bottom: 81.72%;
+  }
+
+  .circle-3 {
+    left: 86.32%;
+    right: -10.38%;
+    top: 14.06%;
+    bottom: 40.83%;
+  }
+
+  .dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .dot-1 {
+    background-color: #e34a67;
+    left: 5.62%;
+    right: 93.82%;
+    top: 18.75%;
+    bottom: 80.21%;
+  }
+
+  .dot-2 {
+    background-color: #7860d7;
+    left: 45.83%;
+    right: 53.61%;
+    top: 84.9%;
+    bottom: 14.06%;
+  }
+
+  .dot-3 {
+    background-color: #00c9b7;
+    left: 60.76%;
+    right: 38.68%;
+    top: 10.94%;
+    bottom: 88.02%;
+  }
+
+  .dot-4 {
+    background-color: #e34a67;
+    left: 87.43%;
+    right: 12.01%;
+    top: 71.88%;
+    bottom: 27.08%;
+  }
+}
