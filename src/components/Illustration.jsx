@@ -14,14 +14,11 @@ const Planet = () => {
   const rocket = useRef(null);
   const tl = new TimelineMax();
 
-  const [isFlying, setIsFlying] = useState(false);
+  const [isRocketFlying, setIsRocketFlying] = useState(false);
 
   const fly = async () => {
-    setIsFlying(true);
-    // rocket.current.style.transform = 'translateY(-500px)';
-    // setTimeout(() => {
-    //   rocket.current.style.transform = 'none';
-    // }, 3000);
+    setIsRocketFlying(true);
+
     rocket.current.style.transform = 'rotate(90deg)';
 
     await tl.to(rocket.current, {
@@ -43,15 +40,17 @@ const Planet = () => {
       ease: Power1.easeInOut,
     });
 
-    setIsFlying(false);
+    setIsRocketFlying(false);
   };
 
   return (
     <div className='illustration'>
-      <Rocket rocketRef={rocket} isFlying={isFlying} />
+      <Rocket rocketRef={rocket} isRocketFlying={isRocketFlying} />
       <img className='planet' src={planet} alt='planet-img' />
-      <span className={`launch-button ${isFlying && 'active'}`} onClick={fly}>
-        {isFlying ? 'Flying Now!' : 'Launch Rocket!'}
+      <span
+        className={`launch-button ${isRocketFlying && 'active'}`}
+        onClick={fly}>
+        {isRocketFlying ? 'Flying Now!' : 'Launch Rocket!'}
       </span>
     </div>
   );

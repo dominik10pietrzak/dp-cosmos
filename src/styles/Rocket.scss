@@ -21,7 +21,7 @@
     }
   }
 
-  .smoke-one {
+  .smoke-left {
     width: 65px;
     position: absolute;
     right: 100%;
@@ -29,7 +29,7 @@
     transform-origin: right bottom;
   }
 
-  .smoke-two {
+  .smoke-right {
     width: 52px;
     position: absolute;
     left: 100%;
@@ -39,17 +39,17 @@
 }
 
 .flying {
-  .smoke-one {
-    animation: smokeOne 0.2s ease infinite;
+  .smoke-left {
+    animation: smokeLeft 0.2s ease infinite;
     transform: rotate(-90deg) translateY(25px);
   }
-  .smoke-two {
-    animation: smokeTwo 0.2s ease infinite;
+  .smoke-right {
+    animation: smokeRight 0.2s ease infinite;
     transform: rotate(90deg) translateY(25px);
   }
 }
 
-@keyframes smokeOne {
+@keyframes smokeLeft {
   0%,
   100% {
     width: 25px;
@@ -59,7 +59,7 @@
   }
 }
 
-@keyframes smokeTwo {
+@keyframes smokeRight {
   0%,
   100% {
     width: 50px;

@@ -11,7 +11,7 @@ import arrowUp from '../assets/arrow-up.svg';
 import arrowDown from '../assets/arrow-down.svg';
 import arrowSM from '../assets/arrows.svg';
 
-const Modal = ({ currentType, visibility, setVisibility }) => {
+const Modal = ({ currentType, isModalVisible, setVisibility }) => {
   const [sortMethod, setSortMethod] = useState('unsorted');
 
   const dispatch = useDispatch();
@@ -39,7 +39,7 @@ const Modal = ({ currentType, visibility, setVisibility }) => {
   }, [sortMethod]);
 
   return (
-    <div className={`modal ${!visibility ? 'hidden' : ''}`}>
+    <div className={`modal ${!isModalVisible ? 'hidden' : ''}`}>
       <div className='topbar'>
         <h3 className='heading'>{currentType.type}</h3>
         <img

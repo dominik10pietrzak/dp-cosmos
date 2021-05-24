@@ -4,11 +4,11 @@ import '../styles/LinkButtonList.scss';
 import LinkButton from './LinkButton';
 import Modal from './Modal';
 
-import types from '../types';
+import types from '../assets/apiDataTypes';
 
 const LinkButtonList = () => {
   const [currentType, setCurrentType] = useState({});
-  const [visibility, setVisibility] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   return (
     <div className='link-button-list'>
@@ -17,13 +17,13 @@ const LinkButtonList = () => {
           key={type.type}
           type={type}
           setCurrentType={setCurrentType}
-          setVisibility={setVisibility}
+          setVisibility={setIsModalVisible}
         />
       ))}
       <Modal
         currentType={currentType}
-        visibility={visibility}
-        setVisibility={setVisibility}
+        isModalVisible={isModalVisible}
+        setVisibility={setIsModalVisible}
       />
     </div>
   );
