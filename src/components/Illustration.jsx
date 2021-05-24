@@ -4,18 +4,17 @@ import '../styles/Illustration.scss';
 import Rocket from './Rocket';
 
 import planet from '../assets/planet.svg';
-import { Power1 } from 'gsap/gsap-core';
-import { TimelineMax } from 'gsap/gsap-core';
-import gsap from 'gsap/gsap-core';
+import { Power1 } from 'gsap/dist/gsap';
+import { TimelineMax } from 'gsap/dist/gsap';
 import { MotionPathPlugin } from 'gsap/all';
+import gsap from 'gsap/dist/gsap';
 
 const Planet = () => {
-  const [isFlying, setIsFlying] = useState(false);
   gsap.registerPlugin(MotionPathPlugin);
-
   const rocket = useRef(null);
-
   const tl = new TimelineMax();
+
+  const [isFlying, setIsFlying] = useState(false);
 
   const fly = async () => {
     setIsFlying(true);
